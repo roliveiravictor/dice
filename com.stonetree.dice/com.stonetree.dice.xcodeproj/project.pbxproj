@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		575AE39421A247EC0064B1DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575AE39321A247EC0064B1DA /* AppDelegate.swift */; };
+		575AE39621A247EC0064B1DA /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575AE39521A247EC0064B1DA /* DiceViewController.swift */; };
+		575AE39921A247EC0064B1DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575AE39721A247EC0064B1DA /* Main.storyboard */; };
+		575AE39B21A247EE0064B1DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575AE39A21A247EE0064B1DA /* Assets.xcassets */; };
+		575AE39E21A247EE0064B1DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575AE39C21A247EE0064B1DA /* LaunchScreen.storyboard */; };
+		575AE3A921A247EE0064B1DA /* com_stonetree_diceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575AE3A821A247EE0064B1DA /* com_stonetree_diceTests.swift */; };
+		575AE3B421A247EE0064B1DA /* com_stonetree_diceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575AE3B321A247EE0064B1DA /* com_stonetree_diceUITests.swift */; };
+		57B7667D21A4BB2F00FB7DCB /* DiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7667C21A4BB2F00FB7DCB /* DiceModel.swift */; };
+		57B7667F21A4BB3B00FB7DCB /* DicePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7667E21A4BB3B00FB7DCB /* DicePresenter.swift */; };
+		57B7668121A4BB8A00FB7DCB /* DiceViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7668021A4BB8A00FB7DCB /* DiceViewPresenter.swift */; };
+		57B7668521A4C00B00FB7DCB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7668421A4C00B00FB7DCB /* Constants.swift */; };
+		57B7668721A4C40700FB7DCB /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7668621A4C40700FB7DCB /* DiceView.swift */; };
+		57F779AF21A4410E0067BCAA /* RandomUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F779AE21A4410E0067BCAA /* RandomUtils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		575AE3A521A247EE0064B1DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 575AE38821A247EC0064B1DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 575AE38F21A247EC0064B1DA;
+			remoteInfo = com.stonetree.dice;
+		};
+		575AE3B021A247EE0064B1DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 575AE38821A247EC0064B1DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 575AE38F21A247EC0064B1DA;
+			remoteInfo = com.stonetree.dice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		575AE39021A247EC0064B1DA /* com.stonetree.dice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = com.stonetree.dice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		575AE39321A247EC0064B1DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		575AE39521A247EC0064B1DA /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
+		575AE39821A247EC0064B1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		575AE39A21A247EE0064B1DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		575AE39D21A247EE0064B1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		575AE39F21A247EE0064B1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		575AE3A421A247EE0064B1DA /* com.stonetree.diceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.stonetree.diceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		575AE3A821A247EE0064B1DA /* com_stonetree_diceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = com_stonetree_diceTests.swift; sourceTree = "<group>"; };
+		575AE3AA21A247EE0064B1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		575AE3AF21A247EE0064B1DA /* com.stonetree.diceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.stonetree.diceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		575AE3B321A247EE0064B1DA /* com_stonetree_diceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = com_stonetree_diceUITests.swift; sourceTree = "<group>"; };
+		575AE3B521A247EE0064B1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57B7667C21A4BB2F00FB7DCB /* DiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceModel.swift; sourceTree = "<group>"; };
+		57B7667E21A4BB3B00FB7DCB /* DicePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicePresenter.swift; sourceTree = "<group>"; };
+		57B7668021A4BB8A00FB7DCB /* DiceViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewPresenter.swift; sourceTree = "<group>"; };
+		57B7668421A4C00B00FB7DCB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		57B7668621A4C40700FB7DCB /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
+		57F779AE21A4410E0067BCAA /* RandomUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUtils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		575AE38D21A247EC0064B1DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575AE3A121A247EE0064B1DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575AE3AC21A247EE0064B1DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		575AE38721A247EC0064B1DA = {
+			isa = PBXGroup;
+			children = (
+				575AE39221A247EC0064B1DA /* com.stonetree.dice */,
+				575AE3A721A247EE0064B1DA /* com.stonetree.diceTests */,
+				575AE3B221A247EE0064B1DA /* com.stonetree.diceUITests */,
+				575AE39121A247EC0064B1DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		575AE39121A247EC0064B1DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				575AE39021A247EC0064B1DA /* com.stonetree.dice.app */,
+				575AE3A421A247EE0064B1DA /* com.stonetree.diceTests.xctest */,
+				575AE3AF21A247EE0064B1DA /* com.stonetree.diceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		575AE39221A247EC0064B1DA /* com.stonetree.dice */ = {
+			isa = PBXGroup;
+			children = (
+				57B7668321A4BFFB00FB7DCB /* constants */,
+				57B7667821A4BAFE00FB7DCB /* dice */,
+				57F779AD21A440EC0067BCAA /* utils */,
+				575AE39321A247EC0064B1DA /* AppDelegate.swift */,
+				575AE39721A247EC0064B1DA /* Main.storyboard */,
+				575AE39A21A247EE0064B1DA /* Assets.xcassets */,
+				575AE39C21A247EE0064B1DA /* LaunchScreen.storyboard */,
+				575AE39F21A247EE0064B1DA /* Info.plist */,
+			);
+			path = com.stonetree.dice;
+			sourceTree = "<group>";
+		};
+		575AE3A721A247EE0064B1DA /* com.stonetree.diceTests */ = {
+			isa = PBXGroup;
+			children = (
+				575AE3A821A247EE0064B1DA /* com_stonetree_diceTests.swift */,
+				575AE3AA21A247EE0064B1DA /* Info.plist */,
+			);
+			path = com.stonetree.diceTests;
+			sourceTree = "<group>";
+		};
+		575AE3B221A247EE0064B1DA /* com.stonetree.diceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				575AE3B321A247EE0064B1DA /* com_stonetree_diceUITests.swift */,
+				575AE3B521A247EE0064B1DA /* Info.plist */,
+			);
+			path = com.stonetree.diceUITests;
+			sourceTree = "<group>";
+		};
+		57B7667821A4BAFE00FB7DCB /* dice */ = {
+			isa = PBXGroup;
+			children = (
+				57B7667B21A4BB1300FB7DCB /* presenter */,
+				57B7667A21A4BB0E00FB7DCB /* model */,
+				57B7667921A4BB0500FB7DCB /* view */,
+			);
+			path = dice;
+			sourceTree = "<group>";
+		};
+		57B7667921A4BB0500FB7DCB /* view */ = {
+			isa = PBXGroup;
+			children = (
+				575AE39521A247EC0064B1DA /* DiceViewController.swift */,
+				57B7668621A4C40700FB7DCB /* DiceView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		57B7667A21A4BB0E00FB7DCB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				57B7667C21A4BB2F00FB7DCB /* DiceModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		57B7667B21A4BB1300FB7DCB /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				57B7667E21A4BB3B00FB7DCB /* DicePresenter.swift */,
+				57B7668021A4BB8A00FB7DCB /* DiceViewPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		57B7668321A4BFFB00FB7DCB /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				57B7668421A4C00B00FB7DCB /* Constants.swift */,
+			);
+			path = constants;
+			sourceTree = "<group>";
+		};
+		57F779AD21A440EC0067BCAA /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				57F779AE21A4410E0067BCAA /* RandomUtils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		575AE38F21A247EC0064B1DA /* com.stonetree.dice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 575AE3B821A247EE0064B1DA /* Build configuration list for PBXNativeTarget "com.stonetree.dice" */;
+			buildPhases = (
+				575AE38C21A247EC0064B1DA /* Sources */,
+				575AE38D21A247EC0064B1DA /* Frameworks */,
+				575AE38E21A247EC0064B1DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.stonetree.dice;
+			productName = com.stonetree.dice;
+			productReference = 575AE39021A247EC0064B1DA /* com.stonetree.dice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		575AE3A321A247EE0064B1DA /* com.stonetree.diceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 575AE3BB21A247EE0064B1DA /* Build configuration list for PBXNativeTarget "com.stonetree.diceTests" */;
+			buildPhases = (
+				575AE3A021A247EE0064B1DA /* Sources */,
+				575AE3A121A247EE0064B1DA /* Frameworks */,
+				575AE3A221A247EE0064B1DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				575AE3A621A247EE0064B1DA /* PBXTargetDependency */,
+			);
+			name = com.stonetree.diceTests;
+			productName = com.stonetree.diceTests;
+			productReference = 575AE3A421A247EE0064B1DA /* com.stonetree.diceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		575AE3AE21A247EE0064B1DA /* com.stonetree.diceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 575AE3BE21A247EE0064B1DA /* Build configuration list for PBXNativeTarget "com.stonetree.diceUITests" */;
+			buildPhases = (
+				575AE3AB21A247EE0064B1DA /* Sources */,
+				575AE3AC21A247EE0064B1DA /* Frameworks */,
+				575AE3AD21A247EE0064B1DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				575AE3B121A247EE0064B1DA /* PBXTargetDependency */,
+			);
+			name = com.stonetree.diceUITests;
+			productName = com.stonetree.diceUITests;
+			productReference = 575AE3AF21A247EE0064B1DA /* com.stonetree.diceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		575AE38821A247EC0064B1DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Stone Tree";
+				TargetAttributes = {
+					575AE38F21A247EC0064B1DA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					575AE3A321A247EE0064B1DA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 575AE38F21A247EC0064B1DA;
+					};
+					575AE3AE21A247EE0064B1DA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 575AE38F21A247EC0064B1DA;
+					};
+				};
+			};
+			buildConfigurationList = 575AE38B21A247EC0064B1DA /* Build configuration list for PBXProject "com.stonetree.dice" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 575AE38721A247EC0064B1DA;
+			productRefGroup = 575AE39121A247EC0064B1DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				575AE38F21A247EC0064B1DA /* com.stonetree.dice */,
+				575AE3A321A247EE0064B1DA /* com.stonetree.diceTests */,
+				575AE3AE21A247EE0064B1DA /* com.stonetree.diceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		575AE38E21A247EC0064B1DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575AE39E21A247EE0064B1DA /* LaunchScreen.storyboard in Resources */,
+				575AE39B21A247EE0064B1DA /* Assets.xcassets in Resources */,
+				575AE39921A247EC0064B1DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575AE3A221A247EE0064B1DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575AE3AD21A247EE0064B1DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		575AE38C21A247EC0064B1DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57B7668121A4BB8A00FB7DCB /* DiceViewPresenter.swift in Sources */,
+				57B7668721A4C40700FB7DCB /* DiceView.swift in Sources */,
+				57B7667D21A4BB2F00FB7DCB /* DiceModel.swift in Sources */,
+				575AE39621A247EC0064B1DA /* DiceViewController.swift in Sources */,
+				575AE39421A247EC0064B1DA /* AppDelegate.swift in Sources */,
+				57B7668521A4C00B00FB7DCB /* Constants.swift in Sources */,
+				57B7667F21A4BB3B00FB7DCB /* DicePresenter.swift in Sources */,
+				57F779AF21A4410E0067BCAA /* RandomUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575AE3A021A247EE0064B1DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575AE3A921A247EE0064B1DA /* com_stonetree_diceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575AE3AB21A247EE0064B1DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575AE3B421A247EE0064B1DA /* com_stonetree_diceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		575AE3A621A247EE0064B1DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 575AE38F21A247EC0064B1DA /* com.stonetree.dice */;
+			targetProxy = 575AE3A521A247EE0064B1DA /* PBXContainerItemProxy */;
+		};
+		575AE3B121A247EE0064B1DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 575AE38F21A247EC0064B1DA /* com.stonetree.dice */;
+			targetProxy = 575AE3B021A247EE0064B1DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		575AE39721A247EC0064B1DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				575AE39821A247EC0064B1DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		575AE39C21A247EE0064B1DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				575AE39D21A247EE0064B1DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		575AE3B621A247EE0064B1DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		575AE3B721A247EE0064B1DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		575AE3B921A247EE0064B1DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EK58MRZVAU;
+				INFOPLIST_FILE = com.stonetree.dice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ST.com-stonetree-dice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		575AE3BA21A247EE0064B1DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EK58MRZVAU;
+				INFOPLIST_FILE = com.stonetree.dice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ST.com-stonetree-dice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		575AE3BC21A247EE0064B1DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EK58MRZVAU;
+				INFOPLIST_FILE = com.stonetree.diceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ST.com-stonetree-diceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/com.stonetree.dice.app/com.stonetree.dice";
+			};
+			name = Debug;
+		};
+		575AE3BD21A247EE0064B1DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EK58MRZVAU;
+				INFOPLIST_FILE = com.stonetree.diceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ST.com-stonetree-diceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/com.stonetree.dice.app/com.stonetree.dice";
+			};
+			name = Release;
+		};
+		575AE3BF21A247EE0064B1DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EK58MRZVAU;
+				INFOPLIST_FILE = com.stonetree.diceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ST.com-stonetree-diceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = com.stonetree.dice;
+			};
+			name = Debug;
+		};
+		575AE3C021A247EE0064B1DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EK58MRZVAU;
+				INFOPLIST_FILE = com.stonetree.diceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ST.com-stonetree-diceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = com.stonetree.dice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		575AE38B21A247EC0064B1DA /* Build configuration list for PBXProject "com.stonetree.dice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575AE3B621A247EE0064B1DA /* Debug */,
+				575AE3B721A247EE0064B1DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		575AE3B821A247EE0064B1DA /* Build configuration list for PBXNativeTarget "com.stonetree.dice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575AE3B921A247EE0064B1DA /* Debug */,
+				575AE3BA21A247EE0064B1DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		575AE3BB21A247EE0064B1DA /* Build configuration list for PBXNativeTarget "com.stonetree.diceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575AE3BC21A247EE0064B1DA /* Debug */,
+				575AE3BD21A247EE0064B1DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		575AE3BE21A247EE0064B1DA /* Build configuration list for PBXNativeTarget "com.stonetree.diceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575AE3BF21A247EE0064B1DA /* Debug */,
+				575AE3C021A247EE0064B1DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 575AE38821A247EC0064B1DA /* Project object */;
+}
